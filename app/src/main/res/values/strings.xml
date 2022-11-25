@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">App Pos Vendas</string>
+    <string name="base">SBOVALIDACAO</string>
+    <string name="chaves">Prefencias</string>
+    <string name="url">$select=UserCode,UserName,eMail,U_EASY_TOKENPAS&amp;$filter= </string>
+    <string name="sincronizar">Sincronizar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

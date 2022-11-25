@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:id="@+id/layout_superior"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:background="@color/fundo_data">
+
+    <ImageView
+        android:id="@+id/img_data"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/calendario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/text_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="5dp"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@+id/img_data"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/text_tipo_servico"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_superior"/>
+
+    <TextView
+        android:id="@+id/text_descricao"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/text_tipo_servico"
+        app:layout_constraintTop_toBottomOf="@+id/text_tipo_servico" />
+
+    <TextView
+        android:id="@+id/text_nome"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_endereco" />
+
+    <TextView
+        android:id="@+id/text_endereco"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/text_descricao"
+        app:layout_constraintTop_toBottomOf="@+id/text_descricao" />
+
+    <TextView
+        android:id="@+id/text_telefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/text_ddd"
+        app:layout_constraintTop_toBottomOf="@+id/text_nome" />
+
+    <TextView
+        android:id="@+id/text_prioridade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/text_prioridade"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toEndOf="@+id/text_tipo_servico"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_margin="-10dp"
+        android:background="?actionBarDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_telefone" />
+
+    <ImageView
+        android:id="@+id/phone"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="7dp"
+        android:src="@drawable/telephone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_prioridade"
+        app:layout_constraintVertical_bias="0.364" />
+
+    <ImageView
+        android:id="@+id/imag_whats"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="7dp"
+        android:src="@drawable/whatsapp"
+        app:layout_constraintTop_toBottomOf="@+id/phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteX="382dp" />
+
+    <TextView
+        android:id="@+id/text_ddd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/text_nome"
+        app:layout_constraintTop_toBottomOf="@+id/text_nome" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
